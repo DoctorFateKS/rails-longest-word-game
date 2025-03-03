@@ -1,0 +1,13 @@
+<h1 class="text-primary font-weight-bold text-center text-gradient shadow-sm p-2">The Longest Word</h1>
+<ul class="d-flex justify-content-center">
+  <% @letters.each do |letter| %>
+    <li class="m-2"><%= letter %></li>
+  <% end %>
+</ul>
+
+<p class="d-flex justify-content-center">What's the longest word you can find ?</p>
+<form class="d-flex justify-content-center" action="/score" method="POST" data-turbo="false">
+  <input type="text" placeholder="Enter your word" name="word">
+  <button type="submit" class="btn btn-primary rounded-circle btn-floating m-2">Submit</button>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

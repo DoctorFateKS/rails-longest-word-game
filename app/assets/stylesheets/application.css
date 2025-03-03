@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+ul li {
+  display: inline-block;
+  background: #6aaef1;
+  color: antiquewhite;
+  align-items: center;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px black;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #6aaef1;
+  padding: 15px;
+}
+
+input {
+  border-radius: 10px;
+  border: 2px solid #6aaef1;
+  padding: 12px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px black;
+}
